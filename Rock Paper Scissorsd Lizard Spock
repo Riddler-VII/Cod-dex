@@ -1,0 +1,52 @@
+#==================Rock Paper Scissorsd Lizard Spock===============
+print('=========================================')
+print('=== Rock Paper Scissorsd Lizard Spock ===')
+print('=========================================')
+print('1 is for “✊” Rock') 
+print('2 is for “✋” Paper') 
+print('3 is for “✌” Scissors')
+print('4 is for “🦎” Lizard') 
+print('5 is for “🖖” Spock') 
+
+import random
+
+d1 = int(input('Player take your choise: '))
+d2 = random.randint(1,5)
+
+print('Your choise:' )
+if d1 == 1:
+    print('✊')
+if d1 == 2:
+    print('✋')
+if d1 == 3:
+    print('✌')
+if d1 == 4:
+    print('🦎')
+if d1 == 5:
+    print('🖖')        
+print('CPU choise:' )
+if d2 == 1:
+    print('✊')
+if d2 == 2:
+    print('✋')
+if d2 == 3:
+    print('✌')
+if d2 == 4:
+    print('🦎')
+if d2 == 5:
+    print('🖖') 
+
+if d1 == d2:
+    print('Try again')
+elif d1 == 1 and d1 < 5 and d2 != 2 and d2 != 5:
+    print('Player won')
+elif d1 == 2 and d1 > 1 and d2 != 3 and d2 != 4:
+    print('Player won')
+elif d1 == 3 and d1 > 2 and d2 != 1 and d2 != 5:
+    print('Player won')
+elif d1 == 4 and d1 < 5 and d2 != 1 and d2 != 3:
+    print('Player won')
+elif d1 == 5 and d1 > 1 and d2 != 2 and d2 != 4:
+    print('Player won')
+else:
+    print('CPU won')
